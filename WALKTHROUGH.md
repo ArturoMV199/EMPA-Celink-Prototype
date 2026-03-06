@@ -168,6 +168,9 @@ This prototype demonstrates how 37 portal features + mobile-native additions tra
 - **CSS custom properties** — all brand colors in `:root`, ready for white-label theming
 - **Responsive** — side-by-side devices on desktop, stacked on mobile
 - **Realistic data** — fictional borrower (Margaret Richardson) with plausible HECM loan details, not "Lorem ipsum" or "John Doe"
+- **"Conceptual Only" disclaimer banner** — every screen displays a Simpat-blue banner at top clarifying this is an early-stage RFI prototype, not a final design
+- **Watermark** — background watermark reads "CONCEPTUAL ONLY — RFI PROTOTYPE" at 3% opacity to reinforce the prototype nature on every page
+- **Flex-based device frames** — device screens use CSS flex column layout ensuring bottom navigation is always visible regardless of content height
 
 ---
 

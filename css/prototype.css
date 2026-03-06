@@ -137,6 +137,8 @@ body::before {
     overflow: hidden;
     position: relative;
     background: var(--celink-bg);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Dynamic Island */
@@ -170,6 +172,8 @@ body::before {
     overflow: hidden;
     position: relative;
     background: var(--celink-bg);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Punch-hole camera */
@@ -195,6 +199,7 @@ body::before {
     font-size: 12px;
     font-weight: 600;
     color: var(--celink-dark);
+    flex-shrink: 0;
 }
 
 .status-bar .time { font-size: 15px; font-weight: 700; }
@@ -203,7 +208,8 @@ body::before {
 
 /* ===== APP CONTENT SCROLL AREA ===== */
 .app-content {
-    height: calc(100% - 44px - 70px);
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
@@ -214,7 +220,7 @@ body::before {
 
 /* Login page has no bottom nav */
 .app-content.full-height {
-    height: calc(100% - 44px);
+    flex: 1;
 }
 
 /* ===== APP HEADER ===== */
@@ -224,6 +230,7 @@ body::before {
     align-items: center;
     padding: 8px 20px 12px;
     background: var(--celink-white);
+    flex-shrink: 0;
 }
 
 .app-header h1 {
@@ -272,6 +279,7 @@ body::before {
     justify-content: space-around;
     align-items: center;
     height: 70px;
+    flex-shrink: 0;
     background: var(--celink-white);
     border-top: 1px solid var(--celink-gray-200);
     padding-bottom: 8px;
